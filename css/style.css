@@ -1,0 +1,137 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "PT Serif", serif;
+  color: #1e272e;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.services {
+  padding: 96px 0;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: all 1s;
+  color: #1e272e;
+  background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+.btn:hover {
+  background-position: 0 100%;
+  color: #1e272e;
+}
+
+/* Navigation */
+.navigation {
+  background: #ffd32a;
+  padding: 12px 0;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0 36px 0 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #1e272e;
+}
+
+.navigation a:hover {
+  color: #d2dae2;
+}
+
+.navigation ul ul li {
+  display: block;
+  margin: 0 0 12px 0;
+}
+
+.navigation ul ul {
+  display: none;
+  position: absolute;
+  background: #1e272e;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 0;
+}
+
+.navigation li:hover ul {
+  display: block;
+  text-align: center;
+}
+
+.navigation ul ul a {
+  color: #ffd32a;
+  display: block;
+  padding: 0 24px;
+}
+
+.navigation ul ul a:hover {
+  color: #d2dae2;
+}
+
+/* Header */
+.splash {
+  background: #ffd32a;
+  color: #1e272e;
+  min-height: 500px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 72px;
+  word-spacing: -24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.page-subtitle {
+  margin: 24px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.page-title span {
+  font-family: "Staatliches", cursive;
+}
+/*# sourceMappingURL=style.css.map */
