@@ -22,35 +22,19 @@ body {
   padding: 96px 0;
 }
 
-.btn {
-  display: inline-block;
-  min-width: 160px;
-  margin: 24px auto 0 auto;
-  padding: 16px;
-  border-radius: 5px;
-  font-family: "PT Serif", serif;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border-width: 2px;
-  border-style: solid;
-  background-position: 100% 0;
-  background-size: 300%;
-  transition: all 1s;
-  color: #1e272e;
-  background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
-}
-
-.btn:hover {
-  background-position: 0 100%;
-  color: #1e272e;
+.welcome {
+  background-image: url("https://images.pexels.com/photos/2873479/pexels-photo-2873479.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Navigation */
 .navigation {
-  background: #ffd32a;
+  background: transparent;
   padding: 12px 0;
+  text-align: right;
+  display: inline-block;
 }
 
 .navigation ul {
@@ -61,51 +45,30 @@ body {
 
 .navigation ul li {
   display: inline-block;
-  position: relative;
   margin: 0 36px 0 0;
 }
 
 .navigation a {
   text-decoration: none;
-  color: #1e272e;
+  color: #ffffff;
+  font-family: "Staatliches", cursive;
 }
 
 .navigation a:hover {
-  color: #d2dae2;
-}
-
-.navigation ul ul li {
-  display: block;
-  margin: 0 0 12px 0;
-}
-
-.navigation ul ul {
-  display: none;
-  position: absolute;
-  background: #1e272e;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 12px 0;
-}
-
-.navigation li:hover ul {
-  display: block;
-  text-align: center;
-}
-
-.navigation ul ul a {
   color: #ffd32a;
-  display: block;
-  padding: 0 24px;
 }
 
-.navigation ul ul a:hover {
-  color: #d2dae2;
+.navigation h4 {
+  text-align: left;
+  font-family: "Dancing Script", cursive;
+  color: #ffd32a;
+  display: inline-block;
+  font-size: 24px;
 }
 
 /* Header */
 .splash {
-  background: #ffd32a;
+  background: transparent;
   color: #1e272e;
   min-height: 500px;
   display: -ms-flexbox;
@@ -119,19 +82,144 @@ body {
 
 .page-title {
   margin: 0;
-  font-size: 72px;
-  word-spacing: -24px;
-  font-weight: 700;
+  font-size: 40px;
   line-height: 1.2;
+  color: #ffffff;
+  font-style: italic;
+  text-align: center;
+  font-family: "PT Serif", serif;
 }
 
 .page-subtitle {
   margin: 24px 0;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 96px;
+  color: #ffffff;
+  font-family: "Staatliches", cursive;
 }
 
-.page-title span {
+.btn {
+  display: inline-block;
+  min-width: 240px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
   font-family: "Staatliches", cursive;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-style: none;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: all 1s;
+  color: #ffffff;
+  background-color: #ffd32a;
+}
+
+.btn:hover {
+  background-position: 0 100%;
+  color: #1e272e;
+}
+
+/* Container */
+.section-title {
+  font-size: 48px;
+  margin: 0;
+  text-align: center;
+  font-family: "Staatliches", cursive;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-style: italic;
+  color: #a5b1c2;
+  text-align: center;
+  padding: 0 0 50px 0;
+  font-family: "PT Serif", serif;
+}
+
+.details {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+}
+
+.info {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Staatliches", cursive;
+}
+
+.details p {
+  text-align: center;
+  font-size: 14px;
+  color: #a5b1c2;
+  font-family: "PT Serif", serif;
+}
+
+.box {
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%;
+  max-width: 30%;
+  position: relative;
+}
+
+.details i {
+  font-size: 30px;
+  background: #ffffff;
+  color: #ffd32a;
+  border: solid;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 50px;
+  margin: 0 40%;
+}
+
+.card {
+  float: left;
+  width: 30%;
+  padding: 0 30px;
+  min-height: 200px;
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%;
+  height: 500px;
+}
+
+.photo {
+  max-width: 100%;
+  height: 50%;
+}
+
+.photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.portfolio {
+  padding: 96px 0;
+  background: #ecf0f1;
+}
+
+.description {
+  background: #ffffff;
+  padding: 20px 0 0 0;
+}
+
+.description .subtitle {
+  padding: 0 0 20px 0;
+  margin: auto;
+}
+
+.info {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
