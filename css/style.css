@@ -19,7 +19,7 @@ body {
 }
 
 .services {
-  padding: 96px 0;
+  padding: 96px 0 0 0;
 }
 
 .welcome {
@@ -33,17 +33,17 @@ body {
 .navigation {
   background: transparent;
   padding: 12px 0;
-  text-align: right;
-  display: inline-block;
 }
 
-.navigation ul {
+.list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  display: inline-block;
+  margin: 0 0 0 33%;
 }
 
-.navigation ul li {
+.list li {
   display: inline-block;
   margin: 0 36px 0 0;
 }
@@ -52,18 +52,20 @@ body {
   text-decoration: none;
   color: #ffffff;
   font-family: "Staatliches", cursive;
+  font-size: 20px;
 }
 
 .navigation a:hover {
   color: #ffd32a;
 }
 
-.navigation h4 {
+.logo {
   text-align: left;
   font-family: "Dancing Script", cursive;
   color: #ffd32a;
+  font-size: 28px;
   display: inline-block;
-  font-size: 24px;
+  margin: 0 0 0 10%;
 }
 
 /* Header */
@@ -73,6 +75,10 @@ body {
   min-height: 500px;
   display: -ms-flexbox;
   display: flex;
+  background-image: url("https://images.pexels.com/photos/2873479/pexels-photo-2873479.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .splash-inner {
@@ -101,7 +107,7 @@ body {
 .btn {
   display: inline-block;
   min-width: 240px;
-  margin: 24px auto 0 auto;
+  margin: 24px 35% 0 35%;
   padding: 16px;
   border-radius: 5px;
   font-family: "Staatliches", cursive;
@@ -148,6 +154,7 @@ body {
       justify-content: space-between;
   max-width: 90%;
   margin: auto;
+  height: 420px;
 }
 
 .info {
@@ -185,17 +192,26 @@ body {
 
 .card {
   float: left;
-  width: 30%;
-  padding: 0 30px;
   min-height: 200px;
   -ms-flex: 0 0 33.333%;
       flex: 0 0 33.333%;
   height: 500px;
+  width: 30%;
+  padding: 0 15px;
+}
+
+.card-content {
+  float: left;
+  min-height: 200px;
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%;
+  height: 70%;
+  background: #ffffff;
 }
 
 .photo {
   max-width: 100%;
-  height: 50%;
+  height: 250px;
 }
 
 .photo img {
@@ -211,7 +227,7 @@ body {
 
 .description {
   background: #ffffff;
-  padding: 20px 0 0 0;
+  padding: 15px 0 0 0;
 }
 
 .description .subtitle {
@@ -221,5 +237,39 @@ body {
 
 .info {
   margin: auto;
+}
+
+.copyright {
+  font-family: "PT Serif", serif;
+  color: #a5b1c2;
+  width: 40%;
+  float: left;
+  margin: 30px 0;
+  padding-left: 70px;
+}
+
+.links {
+  width: 60%;
+  float: left;
+  margin: 30px 0;
+}
+
+.links li {
+  display: inline-block;
+}
+
+.link {
+  font-size: 0;
+}
+
+.link i {
+  font-size: 20px;
+  background: #1e272e;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
 }
 /*# sourceMappingURL=style.css.map */

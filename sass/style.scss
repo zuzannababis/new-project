@@ -29,7 +29,7 @@ body {
     margin: 0 auto;
 }
 .services {
-    padding: 96px 0;
+    padding: 96px 0 0 0;
 }
 .welcome {
     background-image: url('https://images.pexels.com/photos/2873479/pexels-photo-2873479.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
@@ -42,32 +42,34 @@ body {
 .navigation {
     background: transparent;
     padding: 12px 0;
-    text-align: right;
+}
+.list  {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
     display: inline-block;
-    ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-        li {
-            display: inline-block;
-            margin: 0 36px 0 0;
-        }
+    margin: 0 0 0 33%;
+    li {
+        display: inline-block;
+        margin: 0 36px 0 0;
     }
 }
 .navigation a {
     text-decoration: none;
     color: $color-three;
     font-family: $font-header;
+    font-size: 20px;
 }
 .navigation a:hover {
     color: $color-one;
 }
-.navigation h4 {
+.logo {
     text-align: left;
     font-family: $font-logo;
     color: $color-one;
+    font-size: 28px;
     display: inline-block;
-    font-size: 24px;
+    margin: 0 0 0 10%;
 }
 
 /* Header */
@@ -76,6 +78,10 @@ body {
     color: $color-four;
     min-height: 500px;
     display: flex;
+    background-image: url('https://images.pexels.com/photos/2873479/pexels-photo-2873479.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .splash-inner {
     margin: auto;
@@ -100,7 +106,7 @@ body {
 .btn {
     display: inline-block;
     min-width: 240px;
-    margin: 24px auto 0 auto;
+    margin: 24px 35% 0 35%;
     padding: 16px;
     border-radius: 5px;
     font-family: $font-header;
@@ -141,6 +147,7 @@ body {
     justify-content: space-between;
     max-width: 90%;
     margin: auto;
+    height: 420px;
 }
 .info {
     text-align: center;
@@ -172,15 +179,22 @@ body {
 }
 .card {
     float: left;
-    width: 30%;
-    padding: 0 30px;
     min-height: 200px;
     flex: 0 0 33.333%;
     height: 500px;
+    width: 30%;
+    padding: 0 15px;
+}
+.card-content {
+    float: left;
+    min-height: 200px;
+    flex: 0 0 33.333%;
+    height: 70%;
+    background: $color-three;
 }
 .photo {
     max-width: 100%;
-    height: 50%;
+    height: 250px;
     img {
         object-fit: cover;
         width: 100%;
@@ -192,7 +206,7 @@ body {
 }
 .description {
     background: $color-three;
-    padding: 20px 0 0 0;
+    padding: 15px 0 0 0;
     .subtitle {
         padding: 0 0 20px 0;
         margin: auto;
@@ -200,4 +214,33 @@ body {
 }
 .info {
     margin: auto;
+}
+.copyright {  
+    font-family: $font-text;
+    color: $color-five;
+    width: 40%;
+    float: left;
+    margin: 30px 0;
+    padding-left: 70px;
+}
+.links {  
+    width: 60%;
+    float: left;
+    margin: 30px 0;
+    li {
+        display: inline-block;
+    }
+}
+.link {
+    font-size: 0;
+    i {
+        font-size: 20px;
+        background: $color-four;
+        width: 40px;
+        height: 40px;
+        color: $color-three;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+    }
 }
